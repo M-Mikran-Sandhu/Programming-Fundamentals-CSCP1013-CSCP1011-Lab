@@ -3,12 +3,12 @@ marks_list = []
 
 for i in range(COUNT):
         while True:
-        text = input("Enter marks of student " + str(i + 1) + " (0 to 100): ").strip()
+            text = input("Enter marks of student " + str(i + 1) + " (0 to 100): ").strip()
         if text.isdecimal() and int(text) <= 100:
             break              
         print("Invalid input. Enter a whole number from 0 to 100.")
 
-    marks_list.append(int(text))    
+marks_list.append(int(text))    
 
 print()
 for i in range(COUNT):
